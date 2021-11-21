@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>일교차 구하기</title>
+</head>
+<body>
+	<script>
+		// 키보드로 입력되는 모든 데이터는 문자열로 처리된다.
+		// Number()를 활용해 입력받은 문자열데이터를 숫자로 변경한다.
+		var high = Number(prompt("최고 기온을 입력하세요."));
+		var low = Number(prompt("최저 기온을 입력하세요."));
+		
+		var diff = high - low
+		
+		document.write(" - 최고 기온: " + high + "도" + "<br>");
+		document.write(" - 최저 기온: " + low + "도" + "<br>");
+		document.write("일교차는 " + diff + "도 입니다.");
+	</script>
+</body>
+</html>
