@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var height = Number(prompt("키를 입력해주세요."));
+		var weight = Number(prompt("몸무게를 입력해주세요."));
+		var std = (weight - 100) * 0.9;
+		var message;
+		
+		if (std > weight) {
+			message = "다이어트가 필요할 수 있습니다!";
+		} else if ( std < weight) {
+			message = "표준(또는 마른) 체형입니다!";
+		}
+		
+		document.write("키: " + height + "cm<br>");
+		document.write("몸무게: " + weight + "kg<br>");
+		document.write(message);
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아르바이트 급료 계산하기</title>
+</head>
+<body>
+	<div id="result"></div>
+	
+	<script>
+		var hour_pay = 10000;
+		var work_time = 8;
+		var time = 2;
+		var day_night;
+		
+		if (time == 1) {
+			day_night = "주간";
+			total_pay = hour_pay * work_time;
+		} else {
+			day_night = "야간";
+			total_pay = hour_pay * work_time * 1.5;
+		}
+		 document.write(" - " + day_night+"근무 시간 : " + work_time + "시간" + "<br>");
+		 document.write(" - " + "아르바이트 급료: " + total_pay + "원");
+	</script>
+</body>
+</html>
