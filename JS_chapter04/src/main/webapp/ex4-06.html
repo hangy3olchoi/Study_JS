@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="result"></div>
+	
+	<script>
+		var contents = "<table border='1'>";
+		contents += "<th>번호</th><th>제목</th><th>일자</th>";
+		
+		var n = 1;
+		while (n<=3) {
+			contents += "<tr><td>" + n + "</td><td>안녕하세요</td><td>12-07</td></tr>"
+			n++
+		}
+		document.getElementById("result").innerHTML = contents;		
+	</script>
+</body>
+</html>
